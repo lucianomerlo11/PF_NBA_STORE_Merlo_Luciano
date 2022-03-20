@@ -1,0 +1,10 @@
+.counter{
+    width: 7rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.btnGroup{
+    width: 100%;
+    align-items: center;
+}
