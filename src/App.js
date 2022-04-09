@@ -1,5 +1,5 @@
 import NavbarComponent from "./components/Navbar/Navbar";
-import ItemList from "./components/ItemListComponent/ItemListComponent";
+import ItemListContainer from "./components/ItemListConteiner/ItemListComponent";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 
@@ -10,16 +10,12 @@ function App() {
         <BrowserRouter>
           <NavbarComponent></NavbarComponent> 
             <Routes>
-              <Route path='/' element={<ItemList />}></Route>
-              <Route path='/category/:categoryId' element={<ItemList />}></Route>
-              <Route path='/item/:id' element={<ItemDetailContainer />}></Route>
+              <Route path='/' element={<ItemListContainer />}></Route>
+              <Route path='/category/:categoryId' element={<ItemListContainer />}></Route>
+              <Route path='/detail/:productId' element={<ItemDetailContainer/>}></Route>
             </Routes> 
-        </BrowserRouter>
-         
+        </BrowserRouter>        
       </header>
-      <main>
-        <ItemList></ItemList>
-      </main>
     </div>
   );
 }

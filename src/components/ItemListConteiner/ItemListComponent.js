@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import Card from "../Card/CardComponent";
 import { getProducts, getProductsById } from "../Data/Products";
 import { useParams } from 'react-router-dom';
+import ItemList from '../ItemListComponent/ItemList';
 
 
-function ItemList() {
+function ItemListContainer() {
 
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -37,26 +37,17 @@ function ItemList() {
         })
     }, [categoryId])
 
-    if (loading) {
-        return <h1>Cargando productos...</h1>
-    }
-
-    if (products.length === 0) {
-        return <h1>No hay productos</h1>
-    }
-
     return (
-        <div className="container-fluid">
-            <div className="row">
-                <h1>INDUMENTARIA NBA</h1>
-                {products.map(product =>
-                    <div className="col-md-3 mt-3" key={product.id}>
-                        <Card id={product.id} image={product.image} title={product.name} stock={product.stock} price={product.price} description={product.description}></Card>
-                    </div>
-                )}
-            </div>
+        <div className='ItemListContainer'>
+            {
+                loading ?
+                    <h1>Cargando...</h1>:
+                products.length ?
+                    <ItemList key={products.id} products = {products}/> :
+                    <h1>No se encontraron productos</h1>
+            }
         </div>
     )
 }
 
-export default ItemList;
+export default ItemListContainer;

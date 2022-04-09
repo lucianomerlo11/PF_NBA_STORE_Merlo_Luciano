@@ -1,6 +1,6 @@
 const products = [
     {
-        id: '1',
+        id: 1,
         category: 'indumentaria',
         name: 'Camiseta Association Swingman de Nike de Los Ángeles Lakers de LeBron James para hombre',
         size: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -10,7 +10,7 @@ const products = [
         description: 'La camiseta Swingman de Los Angeles Lakers de Nike Association recrea los detalles auténticos de la camiseta que luce LeBron James con un diseño de nivel superior para los aficionados. '
     },
     {
-        id: '2',
+        id: 2,
         category: 'indumentaria',
         name: 'Camiseta Brooklyn Nets Nike 75th Anniversary Edition Swingman - Negro - Kevin Durant - Hombre',
         size: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -20,7 +20,7 @@ const products = [
         description: 'Obtén la calidad que mereces con esta camiseta Swingman. Brillante dentro y fuera de la cancha, ¡ningún aficionado a la NBA puede estar sin ella!'
     },
     {
-        id: '3',
+        id: 3,
         category: 'indumentaria',
         name: 'Boston Celtics Nike Icon Swingman Camiseta de la NBA - Jayson Tatum - Hombre',
         size: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -30,7 +30,7 @@ const products = [
         description: 'Basado en la auténtica camiseta de la NBA que lleva Jayson Tatum, asegúrate de estar listo para el día del partido con la camiseta Nike Icon Swingman de los Boston Celtics'
     },
     {
-        id: '4',
+        id: 4,
         category: 'indumentaria',
         name: 'Chicago Bulls Nike Icon Swingman Camiseta de la NBA - Zach Lavine - Hombre',
         size: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -40,7 +40,7 @@ const products = [
         description: 'Basado en la auténtica camiseta de la NBA que lleva Zach Lavine, asegúrate de estar listo para el día del partido con la camiseta Nike Icon Swingman de los Chicago Bulls'
     },
     {
-        id: '5',
+        id: 5,
         category: 'indumentaria',
         name: 'Pantalones cortos Nike City Edition Swingman de los Miami Heat para hombre',
         size: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -50,7 +50,7 @@ const products = [
         description: 'Obtenga una sensación realmente profesional con este excelente artículo de reproducción.'
     },
     {
-        id: '6',
+        id: 6,
         category: 'indumentaria',
         name: 'Pantalones cortos Nike City Edition Swingman de Golden State Warriors para hombre',
         size: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -60,7 +60,7 @@ const products = [
         description: 'Obtenga una sensación realmente profesional con este excelente artículo de reproducción'
     },
     {
-        id: '7',
+        id: 7,
         category: 'indumentaria',
         name: 'Los Angeles Lakers Nike Standard Issue Pant - Mens',
         size: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -70,7 +70,7 @@ const products = [
         description: 'Renueva tu vestuario al estilo de la NBA con esta prenda esencial.'
     },
     {
-        id: '8',
+        id: 8,
         category: 'indumentaria',
         name: 'San Antonio Spurs Fanatics Branded Splatter Graphic Hoodie - Hombre',
         size: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -80,7 +80,7 @@ const products = [
         description: 'Una prenda que irá allá donde vayas y es increíblemente versátil.'
     },
     {
-        id: '9',
+        id: 9,
         category: 'indumentaria',
         name: 'Camiseta negra de malla con cuello redondo Mitchell & Ness de los New Jersey Nets para hombre',
         size: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -90,7 +90,7 @@ const products = [
         description: 'Adopta un estilo de la NBA premium allá donde vayas. Una prenda imprescindible para cualquier aficionado,'
     },
     {
-        id: '10',
+        id: 10,
         category: 'indumentaria',
         name: 'Cortavientos Miami Heat Mitchell & Ness - Hombre',
         size: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -100,7 +100,7 @@ const products = [
         description: 'Adopta un estilo clásico inspirado en la NBA allá donde vayas.'
     },
     {
-        id: '11',
+        id: 11,
         category: 'indumentaria',
         name: 'Chaqueta de peso pesado con la marca Fanatics de los Boston Celtics - Hombres',
         size: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -110,7 +110,7 @@ const products = [
         description: 'Una prenda de abrigo premium para los auténticos seguidores del baloncesto, esta chaqueta puede acompañarte a todas partes y lucir estupendamente allá donde vayas.'
     },
     {
-        id: '12',
+        id: 12,
         category: 'indumentaria',
         name: 'Camiseta Dallas Mavericks Nike 75th Anniversary Edition Swingman - Azul - Luka Doncic - Hombre',
         size: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -120,7 +120,7 @@ const products = [
         description: 'Obtén la calidad que mereces con esta camiseta Swingman. Brillante dentro y fuera de la cancha'
     },
     {
-        id: '13',
+        id: 13,
         category: 'indumentaria',
         name: 'NBA Nike Team 31 75th Anniversary All Over Print T-Shirt - Mens',
         size: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -130,7 +130,7 @@ const products = [
         description: 'Sola o acompañada de una chaqueta, en casa o en la calle, esta camiseta te concederá un estilo de baloncesto real en cualquier momento y lugar'
     },
     {
-        id: '14',
+        id: 14,
         category: 'indumentaria',
         name: 'Denver Nuggets Jordan Statement Swingman Jersey - Nikola Jokic - Mens',
         size: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -140,7 +140,7 @@ const products = [
         description: 'Si quieres estar más cerca de una auténtica camiseta de la NBA acertarás con esta prenda'
     },
     {
-        id: '15',
+        id: 15,
         category: 'indumentaria',
         name: 'Camiseta San Antonio Spurs Manu Ginobili Hardwood Classics Road Swingman de Mitchell & Ness - Hombre',
         size: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -150,7 +150,7 @@ const products = [
         description: 'Retorna a una época pasada para lucir un fantástico look vintage.'
     },
     {
-        id: '16',
+        id: 16,
         category: 'indumentaria',
         name: 'Men Mitchell Ness Gray San Antonio Spurs Hardwood Classics Big Face 2.0 Shorts',
         size: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -160,7 +160,7 @@ const products = [
         description: 'Celebrate San Antonio Spurs history with these Hardwood Classics Big Face 2.0 shorts. These Mitchell & Ness shorts feature large'
     },
     {
-        id: '17',
+        id: 17,
         category: 'indumentaria',
         name: 'NBA Nike Team 31 - Move to Zero T-Shirt - Womens',
         size: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -170,7 +170,7 @@ const products = [
         description: 'Sola o acompañada de una chaqueta, en casa o en la calle, esta camiseta te concederá un estilo de baloncesto real en cualquier momento y lugar.'
     },
     {
-        id: '18',
+        id: 18,
         category: 'indumentaria',
         name: 'NBA Nike Team 31 75th Anniversary DNA Shorts - Mens',
         size: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -180,7 +180,7 @@ const products = [
         description: 'Cómodos y resistentes te concederán un estilo auténtico en el tiempo caluroso.'
     },
     {
-        id: '19',
+        id: 19,
         category: 'accesorios',
         name: 'Brooklyn Nets Stance Shortcut 2 Socks - Mens',
         size: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -190,7 +190,7 @@ const products = [
         description: 'Unos buenos calcetines son esenciales, así que asegúrate de que transmiten un mensaje de apoyo. Confeccionados para ofrecer comodidad y estilo, estos calcetines son perfectos para llevarlos a diario y demostrar a la vez tu orgullo por tu equipo.'
     },
     {
-        id: '20',
+        id: 20,
         category: 'accesorios',
         name: 'Calcetines teñidos Stance de Golden State Warriors',
         size: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -200,7 +200,7 @@ const products = [
         description: 'Unos buenos calcetines son esenciales, así que asegúrate de que transmiten un mensaje de apoyo. Confeccionados para ofrecer comodidad y estilo, estos calcetines son perfectos para llevarlos a diario y demostrar a la vez tu orgullo por tu equipo.'
     },
     {
-        id: '21',
+        id: 21,
         category: 'accesorios',
         name: 'Boston Celtics Stance Shortcut 2 Socks - Mens',
         size: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -210,7 +210,7 @@ const products = [
         description: 'Unos buenos calcetines son esenciales, así que asegúrate de que transmiten un mensaje de apoyo. Confeccionados para ofrecer comodidad y estilo, estos calcetines son perfectos para llevarlos a diario y demostrar a la vez tu orgullo por tu equipo.'
     },
     {
-        id: '22',
+        id: 22,
         category: 'accesorios',
         name: 'Gorra ajustable The League 9FORTY de New Era de los Boston Celtics para hombre',
         size: '',
@@ -220,7 +220,7 @@ const products = [
         description: 'Para lucir un auténtico estilo urbano no hay nada mejor. Con detalles de tu equipo, puedes llevarlo de día y de noche, llueva o haga sol y demostrar el amor por tu equipo allá donde vayas.'
     },
     {
-        id: '23',
+        id: 23,
         category: 'accesorios',
         name: 'Gorra ajustable Brooklyn Nets The League 9FORTY de New Era',
         size: '',
@@ -230,7 +230,7 @@ const products = [
         description: 'Para lucir un auténtico estilo urbano no hay nada mejor. Con detalles de tu equipo, puedes llevarlo de día y de noche, llueva o haga sol y demostrar el amor por tu equipo allá donde vayas.'
     },
     {
-        id: '24',
+        id: 24,
         category: 'accesorios',
         name: 'Gorra New York Knicks New Era City Edition 9FIFTY',
         size: '',
@@ -240,7 +240,7 @@ const products = [
         description: 'Para lucir un auténtico estilo urbano no hay nada mejor. Con detalles de tu equipo, puedes llevarlo de día y de noche, llueva o haga sol y demostrar el amor por tu equipo allá donde vayas.'
     },
     {
-        id: '25',
+        id: 25,
         category: 'zapatillas',
         name: 'Calzado de baloncesto Nike KD14 - Negro / Rojo universitario',
         size: ['9', '9.5', '10', '10.5', '11.5', '12'],
@@ -250,7 +250,7 @@ const products = [
         description: 'Estas zapatillas son ideales para rendir al máximo en la cancha. Diseñadas teniendo en cuenta a los jugadores, estas zapatillas tienen un agarre y sujeción excelentes y ofrecen una comodidad premium para el uso diario.'
     },
     {
-        id: '26',
+        id: 26,
         category: 'zapatillas',
         name: 'Calzado de baloncesto Nike Zoom Freak 3 de la NBA - Camuflaje negro',
         size: ['9', '9.5', '10', '10.5', '11.5', '12'],
@@ -260,7 +260,7 @@ const products = [
         description: 'Un clásico de la NBA actualizado, no hay nada más emblemático que estas zapatillas de caña alta. Un clásico del baloncesto durante décadas. Adopta el característico aspecto de tu equipo con estas zapatillas y lleva tu estilo de juego a otro nive'
     },
     {
-        id: '27',
+        id: 27,
         category: 'zapatillas',
         name: 'Zapatillas Nike Kyrie 6 Basketball - Azul Marino/ Carmesí- Azul - Hombres',
         size: ['9', '9.5', '10', '10.5', '11.5', '12'],
@@ -270,7 +270,7 @@ const products = [
         description: 'Estas zapatillas son ideales para rendir al máximo en la cancha. Diseñadas teniendo en cuenta a los jugadores, estas zapatillas tienen un agarre y sujeción excelentes y ofrecen una comodidad premium para el uso diario.'
     },
     {
-        id: '28',
+        id: 28,
         category: 'zapatillas',
         name: 'Nike Nike KD XIII Basketball Shoe - Team Nets - Mens',
         size: ['9', '9.5', '10', '10.5', '11.5', '12'],
@@ -280,7 +280,7 @@ const products = [
         description: 'Estas zapatillas son ideales para rendir al máximo en la cancha. Diseñadas teniendo en cuenta a los jugadores, estas zapatillas tienen un agarre y sujeción excelentes y ofrecen una comodidad premium para el uso diario.'
     },
     {
-        id: '29',
+        id: 29,
         category: 'zapatillas',
         name: 'Zapatillas de Baloncesto Nike PG 4 - Clippers - Hombres',
         size: ['9', '9.5', '10', '10.5', '11.5', '12'],
@@ -290,7 +290,7 @@ const products = [
         description: 'Estas zapatillas son ideales para rendir al máximo en la cancha. Diseñadas teniendo en cuenta a los jugadores, estas zapatillas tienen un agarre y sujeción excelentes y ofrecen una comodidad premium para el uso diario.'
     },
     {
-        id: '30',
+        id: 30,
         category: 'zapatillas',
         name: 'Zapatillas de baloncesto Nike LeBron 18 Seasonal Multi / Fruity Pebbles',
         size: ['9', '9.5', '10', '10.5', '11.5', '12'],
@@ -300,7 +300,7 @@ const products = [
         description: 'Estas zapatillas son ideales para rendir al máximo en la cancha. Diseñadas teniendo en cuenta a los jugadores, estas zapatillas tienen un agarre y sujeción excelentes y ofrecen una comodidad premium para el uso diario.'
     },
     {
-        id: '31',
+        id: 31,
         category: 'zapatillas',
         name: 'Zapatillas Nike KD13 Basketball - Negro/Blanco- Gris - Hombres',
         size: ['9', '9.5', '10', '10.5', '11.5', '12'],
@@ -310,7 +310,7 @@ const products = [
         description: 'Estas zapatillas son ideales para rendir al máximo en la cancha. Diseñadas teniendo en cuenta a los jugadores, estas zapatillas tienen un agarre y sujeción excelentes y ofrecen una comodidad premium para el uso diario.'
     },
     {
-        id: '32',
+        id: 32,
         category: 'zapatillas',
         name: 'Calzado de baloncesto Nike KD14 - Negro / Gris niebla',
         size: ['9', '9.5', '10', '10.5', '11.5', '12'],
@@ -333,15 +333,15 @@ export const getProducts = () => {
 export const getProductsById = (categoryId) => {
     return new Promise((resolve) => {
         setTimeout(()=>{
-            resolve(products.filter(product => product.category === categoryId))
+            resolve(products.filter(product => product.category == categoryId))
         }, 2000)
     })
 }
 
-export const getProductById = (prodcutId)=>{
+export const getProductById = (productId)=>{
     return new Promise ((resolve) => {
         setTimeout(() => {
-            resolve(products.find(product => product.id === prodcutId))
+            resolve(products.find(product => product.id === parseInt(productId)))
         }, 2000)
     })
 }
