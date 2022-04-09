@@ -8,7 +8,7 @@ function Card(props) {
                 <div className="card-body">
                     <h5 className="card-title">{props.title}</h5>
                     <p className="card-text">{`Precio: ${props.price}`}</p>
-                    <ItemCount stock={props.stock}></ItemCount>
+                    <ItemCount id={props.id} stock={props.stock}></ItemCount>
                 </div>
         </div>
     )

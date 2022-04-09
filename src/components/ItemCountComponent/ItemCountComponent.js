@@ -1,5 +1,7 @@
-import { useState } from "react"
-import './ItemCountComponent.css'
+import { useState } from "react";
+import './ItemCountComponent.css';
+import { Link, NavLink } from "react-router-dom";
+
 export const ItemCount = (props) => {
 
     const [count, setCount] = useState(0);
@@ -23,9 +25,10 @@ export const ItemCount = (props) => {
                 <p className="counter">{count}</p>
                 <button type="button" className="btn btn-outline-primary" onClick={increment}>+</button>
             </div>
-            <a href="#" className="btn btn-primary">Comprar</a>
+            {/* <NavLink to={`/item/${props.id}`} id={props.id}>
+                Ver
+            </NavLink> */}
         </div>
     )
 }
 
-// 
