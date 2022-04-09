@@ -1,5 +1,49 @@
-.card{
-    width: 18rem;
+.talles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.talle{
     border: 1px solid black;
-    margin-right: 10px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 43px;
+
+}
+
+.itemTalle{
+    color: black;
+    text-decoration: none;
+}
+
+.talle a:hover{
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.sizeContainer{
+    align-items: flex-start;
+    background-color: rgba(214, 205, 205, 0.212);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.buy-stock{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buy-stock button{
+    width: 100%;
 }
