@@ -1,11 +1,21 @@
 import bootstrap from "bootstrap";
+import { useEffect, useState } from "react";
+import { getSizeByProductId } from "../Data/Products";
 import "./ItemDetail.css"
 const ItemDetail = ({id, name, image, category, description, price, stock, size}) => {
 
-
+    
+    const [tamanios, setTamanios] = useState([]);
+    
+    useEffect(()=>{
+        getSizeByProductId(id).then(sizes =>{
+            setTamanios(sizes.size)
+        }).catch(error =>{
+            console.log(error)
+        })
+    }, [id])
 
     return (
-
         <div className="container-fluid mt-5">
             <div className="row">
                 <div className="col-md-7">
@@ -16,7 +26,7 @@ const ItemDetail = ({id, name, image, category, description, price, stock, size}
                     <div className="sizeContainer">
                         <h6>Talles</h6>
                         <div className="talles">
-                            {size.map(talle => 
+                            {tamanios.map(talle => 
                                 <div className="talle me-1">
                                     <a className="itemTalle">
                                         {talle}
@@ -36,15 +46,7 @@ const ItemDetail = ({id, name, image, category, description, price, stock, size}
                 </div>
             </div>
         </div>
-        // <div key={id} className="card">
-        //     <img src={image} className="card-img-top" alt="..."/>
-        //         <div className="card-body">
-        //             <h2 className="card-title">{name}</h2>
-        //             <h6 className="card-subtitle mb-2 text-muted">{category}</h6>
-        //             <p className="card-text">{description}</p>
-        //             <p className="card-text">{stock}</p>
-        //         </div>
-        // </div>
+
     )
 }
 

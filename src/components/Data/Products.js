@@ -346,3 +346,12 @@ export const getProductById = (productId)=>{
     })
 }
 
+export const getSizeByProductId = (productId)=>{
+    return new Promise ((resolve)=>{
+        setTimeout(()=>{
+            resolve(
+                products.find(product => product.id === parseInt(productId))
+                )
+        }, 500)
+    })
+}
