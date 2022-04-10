@@ -2,7 +2,7 @@ import bootstrap from "bootstrap";
 import "./ItemDetail.css"
 const ItemDetail = ({id, name, image, category, description, price, stock, size}) => {
 
-
+    console.log(id)
 
     return (
 

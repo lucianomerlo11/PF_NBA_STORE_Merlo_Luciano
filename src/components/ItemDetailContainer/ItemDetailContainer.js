@@ -21,6 +21,8 @@ const ItemDetailContainer = () => {
         })
     }, [productId])
 
+    console.log(product)
+
     if (loading) {
         return <h1>Cargando...</h1>
     }
