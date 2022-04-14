@@ -47,3 +47,12 @@
 .buy-stock button{
     width: 100%;
 }
+
+.btnComprar, .btnAgregar{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.descriptionProduct{
+    background-color: rgb(216, 213, 213);
+}

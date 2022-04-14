@@ -4,11 +4,12 @@ import Cart from '../Cart/CartComponent';
 import {Link, NavLink} from 'react-router-dom'
 import { useParams } from 'react-router-dom';
 import bootstrap from 'bootstrap';
+import './Navbar.css'
 function NavbarComponent() {
     const {category} = useParams();
     return (
-        <nav className='navbar navbar-expand-lg navbar-light' style={{background: 'red'}}>
-            <div className='container-fluid'>
+        <nav className='navbar navbar-expand-lg navbar-light'>
+            <div className='container-fluid menu'>
                 <NavLink to='/' className='navbar-brand align-items-center'>
                     <img src={logo} alt='' width='35' height='35' className='me-1 d-inline-block align-text-top'></img>
                     NBA Store
@@ -19,13 +20,13 @@ function NavbarComponent() {
                 <div className='collapse navbar-collapse' id='navbarNav'>
                     <ul className='navbar-nav'>
                         <li className='nav-item'>
-                            <NavLink to='/' className={({isActive}) => isActive ? 'ActiveOption nav-link' : 'Option nav-link'}>Indumentaria</NavLink>
+                            <NavLink to='/' className='nav-link navBtn'>Indumentaria</NavLink>
                         </li>
                         <li className='nav-item'>
-                            <NavLink to='/category/zapatillas' className={({isActive}) => isActive ? 'ActiveOption nav-link' : 'Option nav-link'}>Zapatillas</NavLink>
+                            <NavLink to='/category/zapatillas' className='nav-link navBtn'>Zapatillas</NavLink>
                         </li>
                         <li className='nav-item'>
-                            <NavLink to='/category/accesorios' className={({isActive}) => isActive ? 'ActiveOption nav-link' : 'Option nav-link'}>Accesorios</NavLink>
+                            <NavLink to='/category/accesorios' className='nav-link navBtn'>Accesorios</NavLink>
                         </li>
                     </ul>
                 </div>

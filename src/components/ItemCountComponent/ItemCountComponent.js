@@ -25,9 +25,12 @@ export const ItemCount = (props) => {
                 <p className="counter">{count}</p>
                 <button type="button" className="btn btn-outline-primary" onClick={increment}>+</button>
             </div>
-            <NavLink to={`/detail/${props.id}`} id={props.id} className='btn btn-primary btnVer'>
+            <div>
+                <button onClick={() => props.onAdd(count)} type="button" className="btn btn-outline-primary btnAgregar">Agregar al carrito</button>
+            </div>
+            {/* <NavLink to={`/detail/${props.id}`} id={props.id} className='btn btn-primary btnVer'>
                 Ver
-            </NavLink>
+            </NavLink> */}
         </div>
     )
 }
