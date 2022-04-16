@@ -1,7 +1,9 @@
+import ItemCart from "./ItemCart";
+
 function ItemCartContainer(){
     return(
         <>
-            <h1>ItemCartContainer</h1>
+            <ItemCart>ItemCartContainer</ItemCart>
         </>
     )
 }

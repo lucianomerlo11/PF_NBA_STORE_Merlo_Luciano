@@ -18,7 +18,7 @@
 }
 
 .navBtn:hover{
-  border-radius: 10px;
+  border-bottom: 5px solid yellow;
   background-color: white;
   color: white;
   font-weight: bolder;

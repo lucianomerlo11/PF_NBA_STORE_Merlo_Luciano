@@ -31,7 +31,7 @@ function NavbarComponent() {
                     </ul>
                 </div>
                 <div className='collapse navbar-collapse justify-content-end' id='navbarNav'>
-                    <Cart></Cart>
+                    <NavLink to={'/cart'}><Cart></Cart></NavLink>
                 </div>
             </div>
         </nav>
