@@ -22,11 +22,7 @@ const ItemDetail = ({ id, name, image, category, description, price, stock, size
     }
 
     useEffect(() => {
-        getSizeByProductId(id).then(sizes => {
-            setTamanios(sizes.size)
-        }).catch(error => {
-            console.log(error)
-        })
+        setTamanios(size)
     }, [id])
 
     return (

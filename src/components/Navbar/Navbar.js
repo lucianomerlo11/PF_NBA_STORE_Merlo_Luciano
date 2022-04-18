@@ -1,12 +1,16 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import logo from '../resources/images/IMG_NBA_STORE_ICON.png';
 import Cart from '../Cart/CartComponent';
 import {Link, NavLink} from 'react-router-dom'
 import { useParams } from 'react-router-dom';
 import bootstrap from 'bootstrap';
+import CartContext from '../../context/CartContext'
 import './Navbar.css'
 function NavbarComponent() {
     const {category} = useParams();
+
+    const {getQuantity} = useContext(CartContext)
+
     return (
         <nav className='navbar navbar-expand-lg navbar-light'>
             <div className='container-fluid menu'>
@@ -31,7 +35,7 @@ function NavbarComponent() {
                     </ul>
                 </div>
                 <div className='collapse navbar-collapse justify-content-end' id='navbarNav'>
-                    <NavLink to={'/cart'}><Cart></Cart></NavLink>
+                    {getQuantity() == 0 ? '' : <NavLink to={'/cart'}><Cart></Cart></NavLink>} 
                 </div>
             </div>
         </nav>
