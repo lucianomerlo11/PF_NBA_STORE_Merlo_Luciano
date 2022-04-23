@@ -26,7 +26,6 @@ const ItemDetailContainer = ({addToCart}) => {
 
         getDoc(docRef).then(querySnapShot => {
             const product = {id: querySnapShot.id, ...querySnapShot.data()}
-            console.log(product)
             setProduct(product)
         }).catch((error) =>{
             console.log(error)

@@ -11,11 +11,10 @@ export const CartContextProvider = ({children}) => {
             ...product,
             quantity
         }
-        console.log("Object",objItemCart)
+
 
         let resultado = cart.some(prod => prod.id == objItemCart.id)    
-        console.log("Resultado de busqueda: ", resultado)
-
+        
         if(resultado){
             for (let i = 0; i < cart.length; i++) {
                 if(cart[i].id == objItemCart.id){
@@ -50,6 +49,12 @@ export const CartContextProvider = ({children}) => {
         return count;
     }
 
+    const getTotal = () =>{
+        return cart.reduce((acc, prod) => {
+            return acc = acc + (prod.price * prod.quantity)
+        }, 0)
+    }
+
 
     return(
         <Context.Provider value={{
@@ -57,7 +62,8 @@ export const CartContextProvider = ({children}) => {
             addItem,
             clearCart,
             getQuantity,
-            removeItem
+            removeItem,
+            getTotal
         }}>
             {children}
         </Context.Provider>

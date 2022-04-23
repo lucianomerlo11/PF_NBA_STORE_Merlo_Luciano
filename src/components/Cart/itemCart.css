@@ -5,3 +5,17 @@
     align-items: center;
     height: 90vh;
 }
+
+
+.btnTransation{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 5px;
+
+}
+
+.btnTransation button{
+    margin-left: 5px;
+}
